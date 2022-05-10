@@ -105,7 +105,7 @@ public class PhoneDb {
 				System.out.print(">이름 :");
 				String search = sc.next();
 				for(int i = 0; i < pList.size(); i++) {
-				if(pList.get(i).getName().contains(search)) {
+				if(pList.get(i).getName().contains(search)) {	//contains메소드는 특정 문자열 검색가능한 기능이 있음.
 					System.out.println(i+1 + ".  " + pList.get(i).getName() + "   " + pList.get(i).getHp() + "  " + pList.get(i).getCompany());
 					}
 				}
