@@ -10,8 +10,10 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-//안된거
-//저장 값 마지막으로 출력
+
+
+
+
 public class PhoneDb {
 
 	public static void main(String[] args) throws IOException {
