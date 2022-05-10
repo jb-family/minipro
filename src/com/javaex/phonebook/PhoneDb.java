@@ -24,13 +24,13 @@ public class PhoneDb {
 		BufferedReader br = new BufferedReader(rd);
 		Scanner sc = new Scanner(System.in);
 		
-		String name = null;
-		String hp = null;
-		String company = null;
+		String name;
+		String hp;
+		String company;
 		
-			
 		
-		for(int i = 0; i < 100; i++) {
+		
+		while(true){
 			String str = br.readLine();
 			if(str == null) {
 				break;
@@ -103,8 +103,6 @@ public class PhoneDb {
 			}else {
 				System.out.println("[다시 입력해주세요.]");
 			}
-			
-			
 			
 		}//while문 끝
 		
