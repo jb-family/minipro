@@ -24,9 +24,9 @@ public class PhoneDb {
 		BufferedReader br = new BufferedReader(rd);
 		Scanner sc = new Scanner(System.in);
 		
-		String name;
-		String hp;
-		String company;
+		String name = null;
+		String hp = null;
+		String company = null;
 		
 		
 		
@@ -100,12 +100,20 @@ public class PhoneDb {
 					bw.newLine();
 				}
 				bw.close();
+			}else if(num == 4) {
+				System.out.println("<4.검색>");
+				System.out.print(">이름 :");
+				String search = sc.next();
+				for(int i = 0; i < pList.size(); i++) {
+				if(pList.get(i).getName().contains(search)) {
+					System.out.println(i+1 + ".  " + pList.get(i).getName() + "   " + pList.get(i).getHp() + "  " + pList.get(i).getCompany());
+					}
+				}
 			}else {
 				System.out.println("[다시 입력해주세요.]");
 			}
 			
 		}//while문 끝
-		
 		
 		sc.close();
 		br.close();
