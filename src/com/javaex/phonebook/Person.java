@@ -56,12 +56,4 @@ public class Person {
 	}	
 	
 	
-	public String plus() {
-		return name + hp + company;
-	}
-	
-	
-	
-	
-	
 }
